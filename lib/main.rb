@@ -1,13 +1,10 @@
-require_relative('./FileReader')
-require_relative('./Constants')
-require_relative('./Manager')
+require_relative('./constants')
+require_relative('./manager')
 
+# Starting point in the application
 module Main
-
   def self.run
-
     self.show_menu
-
   end
 
   def self.show_menu
@@ -39,9 +36,5 @@ module Main
     end
 
     self.show_menu
-
   end
-
 end
-
-Main.run
